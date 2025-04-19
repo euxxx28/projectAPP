@@ -3,7 +3,7 @@
     <h1>💌 Secret Compliment Wall</h1>
     <input v-model="name" placeholder="Your name (optional)" />
     <textarea v-model="message" placeholder="Write something nice..."></textarea>
-    <button @click="postCompliment">Post a Compliment</button>
+    <button @click="postCompliment">Post Compliment</button>
 
     <div v-if="compliments.length === 0">No compliments yet. Be the first!</div>
 
