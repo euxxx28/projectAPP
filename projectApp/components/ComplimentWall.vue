@@ -23,7 +23,7 @@ const name = ref("");
 const message = ref("");
 
 const fetchCompliments = async () => {
-  const res = await fetch("http://localhost:3001/api/compliments");
+  const res = await fetch("https://projectapp-oudc.onrender.com");
   compliments.value = await res.json();
 };
 
@@ -37,7 +37,7 @@ const postCompliment = async () => {
     time: new Date().toLocaleString(),
   };
 
-  await fetch("http://localhost:3001/api/compliments", {
+  await fetch("https://projectapp-oudc.onrender.com", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(newC),
